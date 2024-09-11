@@ -17,7 +17,7 @@ padding: 0;
 
 .first-container{
 
-width: 90vw;
+width: 80vw;
 height: 80vh;
 background-color: white;
 border-radius: 20px;
@@ -62,6 +62,19 @@ align-items: center;
     left: 81px;
 }
 
+.font-common{
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.black-text{
+    color:black;
+}
+.port-text{
+    font-size: 140px;
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+
 .font-first{
 color:white;
 font-size:48px;
@@ -75,4 +88,18 @@ font-weight:300;
     font-size:48px;
     font-family: "Noto Sans JP", sans-serif;
 
+}
+
+.container-min{
+    margin-left:50px;
+    height:100%;
+}
+.port-cont{
+    position:relative;
+}
+
+.port-cont-img{
+    position: absolute;
+  top: 74px;
+  right: -25px;
 }
