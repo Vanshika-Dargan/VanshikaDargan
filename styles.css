@@ -1,0 +1,78 @@
+
+body{
+background-color: #EEEDEB;
+overflow:hidden;
+margin: 0;
+padding: 0;
+}
+
+
+.first-section{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-container{
+
+width: 90vw;
+height: 80vh;
+background-color: white;
+border-radius: 20px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+z-index:1;
+display:flex;
+align-items: center;
+}
+
+.first-hero-img-container{
+    position: relative;
+    
+}
+
+.first-hero-img-bg{
+    margin-left: 58px;
+}
+
+.first-concentric-cont{
+    position: absolute;
+    top: 69px;
+    right: 24px;
+}
+
+.first-concentric{
+   width:242px;                   
+}
+
+.first-profile-cont{
+    position: absolute;
+    top: 69px;
+    right: 24px;
+}
+
+.first-profile{
+    width:242px;   
+}
+
+.first-name-cont{
+    position: absolute;
+    bottom: 65px;
+    left: 81px;
+}
+
+.font-first{
+color:white;
+font-size:48px;
+font-family: "Noto Sans JP", sans-serif;
+font-weight:300;
+}
+
+.font-first-bold{
+    color:white;
+    font-weight: 600;
+    font-size:48px;
+    font-family: "Noto Sans JP", sans-serif;
+
+}
