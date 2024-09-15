@@ -147,6 +147,9 @@ body {
 .h-25 {
   height: 25%;
 }
+.h-20 {
+  height: 20%;
+}
 .h-90{
   height: 90%;
 }
@@ -203,6 +206,13 @@ body {
 .bg-skin{
   background-color: #E8C5E5;
 }
+
+.bg-grey{
+  background-color: #eeedeb;
+}
+.bg-dark-grey{
+  background-color: #DDDDDD
+}
 .text-white {
   color: var(--primary-white);
 }
@@ -219,13 +229,21 @@ body {
   position: absolute;
 }
 
-.first-section {
+.section {
   width: 100vw;
   height: 100vh;
 }
 
-.first-container {
+.section-two{
+  background-image: url('assets/two.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.p60{
   padding: 60px;
+}
+.section-container {
   width: 80vw;
   height: 90vh;
   background-color: white;
