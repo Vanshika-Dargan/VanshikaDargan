@@ -28,6 +28,10 @@ const timelineData = [
 function addTimelineItem(content, isLeft) {
   const timeline = document.getElementById('timeline');
   
+  // Extract everything before the colon and everything after the colon
+  const highlightRegex = /^([^:]+):\s*(.*)$/; // Match everything up to and after the colon
+  const highlightedContent = content.replace(highlightRegex, '<span class="highlight-date">$1</span>: <span class="italic-content">$2</span>');
+
   // Create a new div for the timeline item
   const timelineItem = document.createElement('div');
   timelineItem.classList.add('timeline-item');
@@ -35,7 +39,7 @@ function addTimelineItem(content, isLeft) {
   // Create the content div for the timeline item
   const timelineContent = document.createElement('div');
   timelineContent.classList.add('timeline-item-content');
-  timelineContent.innerHTML = `<p>${content}</p>`;
+  timelineContent.innerHTML = `<p>${highlightedContent}</p>`;
 
   // Append the content to the timeline item
   timelineItem.appendChild(timelineContent);

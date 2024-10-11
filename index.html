@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="assets/favicon.ico"/>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
 </head>
@@ -17,35 +18,44 @@
     <section class="section full-flex">
         <div class="section-container  full-flex w-100 h-100 p60">
             <div class="pr full-flex flex-col w-35 card">
-                <div id="profile-sec" class="w-100 h-85 bg-grey-3">
+                <div id="profile-sec" class="w-100 h-100 bg-grey-3">
                     <div class="pa full-flex" style="top:-35px; gap:10px">
-                        <img src="assets/rhombus.svg">
-                        <span class="font-noto" style="font-size: 20px;">About Me</span>
+                        <img style="width: 20px;height:20px;"src="assets/rhombus.svg">
+                        <span class="font-noto" style="font-size: 15px; color:#61677A;">Connect</span>
                     </div>
 
-                    <div class="first-profile-cont pa" style="width: auto; height:60%;">
-                        <img class="first-profile" style="width: 100%; height: 100%;" src="assets/vanshika-1.png" alt="concentric-circles" />
-                    </div>
+                    <!-- <div class="first-profile-cont pa" style="width: 100%;
+                    padding: 20px;
+                    height: 195px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    box-sizing: border-box;">
+                        <img class="first-profile" style="width: 100%; height: 100%; object-fit: cover;" src="coding.jpg" alt="concentric-circles" />
+                    </div> -->
                    
-                    <div class="first-name-cont pa" style="width: 100%; height: 40%;">
-                        <span class="font-noto text-white font300">Im,</span>
+                    <div class="first-name-cont pa" style="width: 100%;">
+                        <!-- <span class="font-noto text-white font300" style="font-size:40px">Hi,</span> -->
                         <br>
-                        <span class="font-noto text-white font600" style="font-size:6vh">Vanshika<br>Dargan</span>
-                    </div> 
+                        <span class="font-noto text-white font600" style="font-size:40px">
+                            <span id="typed-name"></span><br>
+                        </span>
+                    </div>
+                    
                 </div>
-                <div class="w-100 h-15 bg-grey-3 opacity50">
+                <!-- <div class="w-100 h-15 bg-grey-3 opacity50">
                     <div class="w-100 h-100 full-flex text-white font-noto">
                         vanshikadargan.dev@gmail.com
                         <img style="margin:0 10px;" src="assets/email.svg">
                     </div>
-                </div>
+                </div> -->
 
             </div>
             <div class="w-65 h-100 ml50">
                 <div class="pr h-100">
                     <div class="full-flex flex-row w-100 h-15">
                         <div class="flex w-100 h-100">
-                    <span class="font-noto text-black font140 font300">Portfolio</span>
+                    <span class="font-noto text-white font140 font300">Portfolio</span>
                     <div class="icon-container">
                         <div class="inner-square"></div>
                         <div class="outer-square"></div>
@@ -57,47 +67,49 @@
                 </div>
                 <div class="h-15 w-100">
                     <div class="w-100 h-100 flex flex-row font-noto" style="justify-content: space-between; align-items: center; 
-                    font-size:15px; color:#61677A">
-                        <div>About Me</div>
-                        <div>Connect</div>
-                        <div>Achievements</div>
-                        <div>Github</div>
-                        <div>Something</div>
+                    font-size:15px; color:#61677A; cursor: pointer;">
+                        <a href="https://github.com/Vanshika-Dargan" target="_blank" class="hover-link ">About Me</a>
+                        <a href="oneplay.html" target="_blank" class="hover-link">Work</a>
+                        <a href="https://drive.google.com/file/d/1E9rvoh94ei0_dMrxN218vJTNDcyRDdCQ/view?usp=sharing" target="_blank" class="hover-link ">Resume</a>
+                        <a href="https://github.com/Vanshika-Dargan" target="_blank" class="hover-link ">Github</a>
+                        <a href="https://www.linkedin.com/in/vanshika-dargan-48b548203/" target="_blank" class="hover-link ">LinkedIn</a>
                     </div>
                 </div>
-                    <div class="full-flex flex-col w-100 h-70">
-                    <div class="full-flex flex-row w-100 h-60">
-                    <div class="full-flex w-75 h-100 pr bg-grey-4">
+                    <div class="full-flex flex-col w-100 h-70 border-1">
+                        <video class="w-100 h-100" controls poster="thumbnail.png">
+                            <source src="video.mp4" type="video/mp4" preload="none">
+                            Your browser does not support the video tag.
+                        </video>
+                    <!-- <div class="full-flex flex-row w-100 h-60">
+                    <div class="full-flex w-75 h-100 pr bg-grey-3">
                         <div class="text-white font-alex font50 z-1">I build <br>websites</div>
                         <div class="bg-red circle pa"></div>
                     </div>
                     <div class="flex flex-col w-35 h-100">
-                        <div class="full-flex flex-col font-noto top-half bg-grey">
+                        <div class="full-flex flex-col font-noto top-half bg-grey-3">
                             <div class="font50 font400">251</div>
-                            <div class="font20">Projects</div>
+                            
                         </div>
                         <div class="full-flex flex-col font-noto top bottom-half text-white bg-grey-3">
-                            <div class="font50 font400">10</div>
-                            <div class="font20">Awards</div>
+                            <div class="font50 font400"></div>
+                            
                         </div>
                     </div>
                 </div>
                 <div class="full-flex flex-row w-100 h-40">
-                <div class="w-40 h-100 bg-dark-grey full-flex">
-                    <img style="width:100%; height: 80%; object-fit: contain;" src="assets/work.png">
+                <div class="w-40 h-100 bg-grey-3 full-flex">
                 </div>
                     <div class="flex flex-row w-70 h-100">
                         <div class="bg-grey-3 full-flex w-60 h-100">
-                            <img class="w-50" src="assets/arrow2.png" />
                         </div>
-                        <div class="bg-grey full-flex flex-col w-60 h-100 z-1">
+                        <div class="bg-grey-3 full-flex flex-col w-60 h-100 z-1">
                             <div class="font50 font400">200+</div>
-                            <div class="font20">Visits</div>
-                            <!-- <div class="font-noto font48 font600 text-black">200+</div>
-                            <div class="font-noto font48 text-black">visits</div> -->
+                             <div class="font-noto font48 font600 text-black">200+</div>
+                            <div class="font-noto font48 text-black">visits</div> 
                         </div>
                     </div>
-                </div>
+                </div> -->
+
                 </div>
                 </div>
             </div>
@@ -165,5 +177,22 @@
             
             </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </body>
+<script>
+    // Initialize Typed.js
+    document.addEventListener("DOMContentLoaded", function () {
+        var options = {
+            strings: ["Hey I'm<br>Vanshika...","I build<br>websites...","Let's<br>connect?","Hey I'm<br>Vanshika..."], // Add the strings you want to type here
+            typeSpeed: 100, // Speed of typing in milliseconds
+            backSpeed: 100, // Speed of erasing in milliseconds
+            backDelay: 1000, // Delay before starting to erase
+            startDelay: 500, // Delay before starting to type
+            loop: false // Set to true to loop the animation
+        };
+
+        var typed = new Typed("#typed-name", options);
+    });
+</script>
+
 </html>

@@ -1,3 +1,8 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 * {
   margin: 0;
   padding: 0;
@@ -5,47 +10,38 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Poppins;
   height: 100vh;
-  background-color: #f0f0f0;
+  background-color: #000000;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  gap: 20px;
+  grid-template-columns: 1fr;
   height: 100vh;
-  @media (max-width: 768px){
-    grid-template-columns: 1fr;
-  }
+  border: none;
 }
 
 .column {
   padding: 20px;
   background-color: #fff;
-  border: 1px solid #ddd;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: none;
 }
 
-#left-column {
-  background-color: white;
-  @media (max-width: 768px){
-   display:none;
-  }
-}
 
 #center-column {
-  background-color: lightgrey;
-  overflow-y: auto;
+  background-color: #000000;
+  overflow-y: scroll;
   position: relative;
+  scrollbar-width: none; /* Firefox */
 }
 
-#right-column {
-  background-color: white;
-  @media (max-width: 768px){
-   display:none;
-  }
+#center-column::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
+
+
 
 #timeline {
   position: relative;
@@ -58,8 +54,11 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin: 30px 0;
+  margin: 30px 10vw;
   position: relative;
+  @media (max-width: 1024px){
+    margin: 30px 0vw;
+  }
 }
 
 .timeline-item:nth-child(odd) {
@@ -71,13 +70,13 @@ body {
 }
 
 .timeline-item-content {
-  background-color: #fff;
+  background-color: #000000;
   padding: 15px 20px;
   border-radius: 8px;
   border: 2px solid #333;
   max-width: 45%;
   position: relative;
-  @media (max-width: 768px){
+  @media (max-width: 480px){
     max-width: 100%;
   }
 }
@@ -90,7 +89,7 @@ body {
   width: 2px;
   border-radius: 4px;
   height: 100%;
-  background-color: #333; /* Darker timeline line */
+  background-color: #fff; 
   transform: translateX(-50%);
   z-index: 0;
 }
@@ -98,6 +97,13 @@ body {
 .timeline-item-content p {
   margin: 0;
   font-size: 1rem;
-  color: #333;
+  color: hsla(0, 0%, 100%, .6);
+  letter-spacing:0.3px;
+  line-height: 20px;
+}
+
+.highlight-date {
+  color: #ffffff; /* White color for the date */
+  font-weight: bold;
 }
 
