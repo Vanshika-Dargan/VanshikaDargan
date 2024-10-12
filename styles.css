@@ -1,9 +1,16 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #000000;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  width: 100vw;
 }
 
 :root {
@@ -229,6 +236,9 @@ body {
 .text-white {
   color: var(--primary-white);
 }
+.text-dark-grey{
+  color: #61677A
+}
 
 .text-black {
   color: var(--primary-black);
@@ -399,7 +409,7 @@ display:flex;
 
 .ismob{
   display:none;
-@media(max-width: 480px){
+@media(max-width: 1200px){
 display:flex;
 alexa-align: center;
 justify-content: center;
@@ -410,8 +420,8 @@ flex-direction: column;
 }
 
 .isdesk{
-  @media(max-width: 481px){
-    display:none;
+  @media(max-width: 1200px){
+    display:none !important;
     }
 }
 .container{
