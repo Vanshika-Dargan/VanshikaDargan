@@ -16,12 +16,18 @@
 
 <body>
     <section class="section full-flex isdesk">
-        <div class="section-container  full-flex w-100 h-100 p60">
-            <div class="pr full-flex flex-col w-35 card">
+        <div class="section-container  full-flex w-100 h-100 p60 section-one">
+            <div class="pr full-flex flex-col w-35 card terminal">
                 <div id="profile-sec" class="w-100 h-100 bg-grey-3">
                     <div class="pa full-flex" style="top:-35px; gap:10px">
                         <img style="width: 20px;height:20px;"src="assets/rhombus.svg">
                         <a class="font-noto hover-link" style="font-size: 15px; text-decoration: none;" href="mailto:vanshikadargan.dev@gmail.com">Connect</a>
+                    </div>
+                    <div class="w-100 full-flex bg-dark-grey" style="height: 30px">
+                        <div style="color: black;
+    text-shadow: rgba(255, 255, 255, 0.8) 0px 1px 0px;">
+                            vanshika@developer:/port 0.1.0/bash
+                        </div>
                     </div>
 
                     <!-- <div class="first-profile-cont pa" style="width: 100%;
@@ -34,11 +40,11 @@
                         <img class="first-profile" style="width: 100%; height: 100%; object-fit: cover;" src="coding.jpg" alt="concentric-circles" />
                     </div> -->
                    
-                    <div class="first-name-cont pa" style="width: 100%;">
+                    <div class="first-name-cont pa">
                         <!-- <span class="font-noto text-white font300" style="font-size:40px">Hi,</span> -->
                         <br>
                         <span class="font-noto text-white font600" style="font-size:40px">
-                            <span id="typed-name"></span><br>
+                            $&nbsp;<span id="typed-name"></span><br>
                         </span>
                     </div>
                     
@@ -51,9 +57,9 @@
                 </div> -->
 
             </div>
-            <div class="w-65 h-100 ml50">
+            <div class="w-65 h-100 ml50 portfolio">
                 <div class="pr h-100">
-                    <div class="full-flex flex-row w-100 h-15">
+                    <div class="full-flex flex-row w-100 h-15 portfolio-text">
                         <div class="flex w-100 h-100">
                     <span class="font-noto text-white font140 font300">Portfolio</span>
                     <div class="icon-container">
@@ -65,7 +71,7 @@
                 </div>
                     <!-- <img class="port-cont-img pa" src="assets/super-mark.svg"> -->
                 </div>
-                <div class="h-15 w-100">
+                <div class="h-15 w-100 portfolio-navbar">
                     <div class="w-100 h-100 flex flex-row font-noto" style="justify-content: space-between; align-items: center; 
                     font-size:15px; color:#61677A; cursor: pointer;">
                         <a href="https://medium.com/@vanshikadargan.dev" target="_blank" class="hover-link">Blogs</a>
@@ -121,12 +127,12 @@
     <section class="section section-two full-flex isdesk">
         <div class="section-container  full-flex flex-col w-100 h-100" style="background-color: #eeedeb;">
             <div class="bg-grey-3 w-100 h-15">
-                <div class="flex flex-row font-not text-white" style="justify-content: space-between; font-weight: 1000; font-size: 10vh;">
-                    <div>THE</div>
+                <div class="flex flex-row font-not text-white project-heading" style="justify-content: space-between; font-weight: 1000; font-size: 10vh;">
+                    <div class="hide-in-mob">THE</div>
                     <div>PROJECTS</div>
                 </div>
             </div>
-            <div class="bg-grey w-100 h-85 full-flex flex-row" style="gap:10px;">
+            <div class="bg-grey w-100 h-85 full-flex flex-row desk-view" style="gap:10px;">
                     <div class="w-30 h-100 full-flex flex-col" style="gap:10px;">
                        
                         <a  href="https://github.com/Vanshika-Dargan/assignment-portal-backend" target="_blank" style="text-decoration: none;" class="w-100 h-60 bg-dark-grey">
@@ -174,13 +180,104 @@
                         </div>
 
             </div>
+
+            <div class="bg-grey w-100 h-85 full-flex flex-col mob-view" style="gap:10px;">
+                <div class="w-100 h-20 full-flex flex-col" style="gap:10px;">
+                   
+                    <a  href="https://github.com/Vanshika-Dargan/assignment-portal-backend" target="_blank" style="text-decoration: none;" class="w-100 h-100 bg-dark-grey">
+                        <div class="w-100 h-30 text-black" style="font-weight: 1000; font-size:40px;line-height: 40px;">
+                            ASSIGNMENT<br>PORTAL
+                        </div>
+                    </a>
+                    <!-- <div class="w-100 h-30 bg-dark-grey"></div> -->
+                    <!-- <a href="https://github.com/Vanshika-Dargan/AllAboutAI" target="_blank" style="text-decoration: none;"  class="w-100 h-30 bg-grey-3">
+                        <div class="w-100 h-30 text-white" style="font-weight: 1000; font-size:40px;line-height: 40px;">
+                            ALL<br>ABOUT<br>AI
+                        </div>
+                    </a> -->
+                </div>
+                <div class="w-100 h-30 full-flex flex-row" style="gap:10px;">
+                   
+                    <!-- <div class="w-100 h-30 bg-dark-grey"></div> -->
+                     <a href="https://github.com/Vanshika-Dargan/AllAboutAI" target="_blank" style="text-decoration: none;"  class="w-50 h-100 bg-dark-grey">
+                        <div class="w-100 h-30 text-black" style="font-weight: 1000; font-size:40px;line-height: 40px;">
+                            ASSIGN<br>MENT<br>PORTAL
+                        </div>
+                    </a>
+                    <a href="https://github.com/Vanshika-Dargan/AllAboutAI" target="_blank" style="text-decoration: none;"  class="w-50 h-100 bg-grey-3">
+                        <div class="w-100 h-30 text-white" style="font-weight: 1000; font-size:30px;line-height: 40px;">
+                            ALL ABOUT<br>AI
+                        </div>
+                    </a>
+                </div>
+                <div class="w-100 h-20 full-flex flex-row" style="gap:10px;">
+                   
+                    <!-- <div class="w-100 h-30 bg-dark-grey"></div> -->
+                     
+                    <a  href="https://github.com/Vanshika-Dargan/assignment-portal-backend" target="_blank" style="text-decoration: none;" class="w-100 h-100 bg-dark-grey">
+                        <div class="w-100 h-30 text-black" style="font-weight: 1000; font-size:50px;line-height: 40px;">
+                            ASSIGN<br>MENT<br>PORTAL
+                        </div>
+                    </a>
+                </div>
+                <div class="w-100 h-30 full-flex flex-row" style="gap:10px;">
+                   
+                    <a href="https://github.com/Vanshika-Dargan/AllAboutAI" target="_blank" style="text-decoration: none;"  class="w-70 h-100 bg-grey-3">
+                        <div class="w-100 h-30 text-white" style="font-weight: 1000; font-size:40px;line-height: 40px;">
+                            ALL<br>ABOUT<br>AI
+                        </div>
+                    </a>
+                    <a href="https://github.com/Vanshika-Dargan/AllAboutAI" target="_blank" style="text-decoration: none;"  class="w-30 h-100 bg-dark-grey">
+                        <div class="w-100 h-30 text-black" style="font-weight: 1000; font-size:50px;line-height: 40px;">
+                            ASSIGN<br>MENT<br>PORTAL
+                        </div>
+                    </a>
+                    <!-- <div class="w-100 h-30 bg-dark-grey"></div> -->
+                    <!-- <a href="https://github.com/Vanshika-Dargan/AllAboutAI" target="_blank" style="text-decoration: none;"  class="w-100 h-30 bg-grey-3">
+                        <div class="w-100 h-30 text-white" style="font-weight: 1000; font-size:40px;line-height: 40px;">
+                            ALL<br>ABOUT<br>AI
+                        </div>
+                    </a> -->
+                </div>
+                <!-- <div class="w-30 h-100 full-flex flex-col" style="gap:10px;">
+                    <a href="https://github.com/Vanshika-Dargan/IntelliSum" target="_blank" style="text-decoration: none;"  class="w-100 h-30 bg-dark-grey">
+                            <div class="w-100 h-30 text-black" style="font-weight: 1000; font-size:40px;line-height: 40px;">
+                                INTELLI<br>SUM
+                        </div>
+                    </a>
+                    <a href="https://github.com/Vanshika-Dargan/BloomBoard" target="_blank" style="text-decoration: none;"  class="w-100 h-60 bg-dark-grey">
+                        <div class="w-100 h-30 text-black" style="font-weight: 1000; font-size:40px;line-height: 50px;">
+                            BLOOM<br>BOARD
+                    </div>
+                    </a>
+                    <div class="w-100 h-30 bg-dark-grey"></div> 
+                    </div> -->
+                    <!-- <div class="w-30 h-100 full-flex flex-col" style="gap:10px;">
+                   
+                        <a href="https://github.com/Vanshika-Dargan/RainbowDelightsBackend" target="_blank" style="text-decoration: none;"  class="w-100 h-30 bg-dark-grey pr">
+                            <span class="pa text-black" style="font-weight: 1000; font-size:30px;line-height: 40px; bottom:0; right:0; width: fit-content; height: fit-content;">
+                               RAINBOW DELIGHTS
+                            </span>
+                        </a>
+                        <a href="https://github.com/Vanshika-Dargan/Gurukool" target="_blank" style="text-decoration: none;"  class="w-100 h-30 bg-grey-3 pr">
+                            <span class="text-white pa" style="font-weight: 1000; font-size:40px;line-height: 40px; bottom:0px; right:0">
+                                GURU<br>KOOL
+                            </span>
+                        </a>
+                        <a href="https://github.com/Vanshika-Dargan/Commutify" target="_blank" style="text-decoration: none;"  class="w-100 h-30 bg-dark-grey">
+                            <div class="w-100 h-30 text-black" style="font-weight: 1000; font-size:30px;line-height: 40px;">
+                                COMMUTIFY<br>
+                        </div>
+                        </a>
+                    </div> -->
+
+        </div>
             
             </div>
     </section>
     <section class="ismob text-white">
-        This site is under development for mobile. You can view this in desktop..
-        Meanwhile check my Resume
-        <a href="https://drive.google.com/file/d/1E9rvoh94ei0_dMrxN218vJTNDcyRDdCQ/view?usp=sharing" target="_blank" style="text-decoration:none; color:orange">Resume</a>
+        This site is under development for mobile. You can view this in desktop and tablet.
+        <a href="https://drive.google.com/file/d/1E9rvoh94ei0_dMrxN218vJTNDcyRDdCQ/view?usp=sharing" target="_blank" style="text-decoration:none; color:orange;">Resume</a>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </body>
@@ -188,7 +285,7 @@
     // Initialize Typed.js
     document.addEventListener("DOMContentLoaded", function () {
         var options = {
-            strings: ["Hey I'm<br>Vanshika...","I build<br>websites...","Let's<br>connect?","Hey I'm<br>Vanshika..."], // Add the strings you want to type here
+            strings: ["Hey I'm<br>Vanshika...","I build<br>websites...","Let's<br>connect?","Hey I'm<br>Vanshika..."], 
             typeSpeed: 100, // Speed of typing in milliseconds
             backSpeed: 100, // Speed of erasing in milliseconds
             backDelay: 1000, // Delay before starting to erase
