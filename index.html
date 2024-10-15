@@ -27,20 +27,20 @@
 
     .icon-group {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 columns */
-    gap: 30px; /* Space between icons */
-    justify-items: center; /* Center icons within grid cells */
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 30px; 
+    justify-items: center; 
     cursor: pointer;
-    padding: 20px;
+    padding: 30px;
 }
 
 .icon-group i {
-    color: #DDDDDD; /* Ensure icons are white */
-    transition: transform 0.3s; /* Smooth scaling on hover */
+    color: #DDDDDD; 
+    transition: transform 0.3s; 
 }
 
 .icon-group i:hover {
-    transform: scale(1.1); /* Slightly enlarge icon on hover */
+    transform: scale(1.2);
 }
 
 </style>
@@ -307,13 +307,22 @@
             </div>
     </section>
     <section class="section section-three full-flex isdesk flex-row w-100 h-100" style="gap: 50px;">
-        <div class="w-40" style="height: 360px;">
+        <div class="w-30">
         <div class="full-flex flex-row w-100 h-15 portfolio-text">
-            <div class="flex w-100 h-100">
+           
+            <div class="flex w-100 h-100 flex-col">
+                <div class="flex flex-row">
         <span class="font-noto text-white font140 font300">Skills</span>
         <div class="icon-container">
             <div class="inner-square"></div>
             <div class="outer-square"></div>
+          </div>
+          </div>
+          <div id="playground" class="font-noto flex flex-col text-dark-grey" style="font-size: 20px;">
+            <div class="flex"><img src="arrow.svg">Learning Cassandra</div>
+            <div class="flex"><img src="arrow.svg">Learning Kafka</div>
+            <div class="flex"><img src="arrow.svg">Learning Typescript</div>
+            <div class="flex"><img src="arrow.svg">Learning Nest</div>
           </div>
           
         
@@ -331,33 +340,152 @@
 </div>
     
         <!-- Languages -->
-        <div class="icon-group w-50 border-1">
-            <i class="fab fa-java fa-3x" ></i>
-            <i class="fab fa-js fa-3x" ></i>
-            <i class="fab fa-html5 fa-3x" ></i>
-            <i class="fab fa-css3-alt fa-3x" ></i>
-            <i class="fab fa-angular fa-3x" ></i>
-            <i class="fab fa-react fa-3x" ></i>
-            <i class="fab fa-bootstrap fa-3x" ></i>
-            <i class="fab fa-css3-alt fa-3x" ></i>
-            <i class="fab fa-weixin fa-3x" ></i>
-            <i class="fab fa-node-js fa-3x" ></i>
-            <i class="fab fa-npm fa-3x" ></i>
-            <i class="fab fa-aws fa-3x" ></i>
-            <i class="fab fa-java fa-3x" ></i> <!-- Placeholder for SpringBoot -->
-            <i class="fas fa-vials fa-3x" ></i> <!-- Placeholder for Tests -->
-            <i class="fas fa-clock fa-3x" ></i> <!-- Placeholder for Cron jobs -->
-            <i class="fas fa-database fa-3x" ></i> <!-- MongoDB -->
-            <i class="fas fa-database fa-3x" ></i> <!-- MySQL -->
-            <i class="fas fa-database fa-3x" ></i> <!-- Postgres -->
-            <i class="fas fa-database fa-3x" ></i> <!-- Placeholder for Redis -->
-            <i class="fab fa-linux fa-3x" ></i>
-            <i class="fab fa-docker fa-3x" ></i>
-            <i class="fab fa-git fa-3x" ></i>
-            <i class="fas fa-tasks fa-3x" ></i> <!-- Jira -->
-            <i class="fas fa-book fa-3x" ></i> <!-- Documentation -->
-            <i class="fas fa-code fa-3x" ></i> <!-- DSA -->
+        <div id="skills" class="icon-group w-60 border-1">
+            <!-- Java -->
+            <div class="full-flex flex-col text-dark-grey">
+                <i class="fab fa-java fa-3x"></i>
+                <span>Java</span>
+            </div>
+            
+            <!-- JavaScript -->
+            <div class="full-flex flex-col text-dark-grey">
+                <i class="fab fa-js fa-3x"></i>
+                <span>JavaScript</span>
+            </div>
+            
+            <!-- HTML -->
+            <div class="full-flex flex-col text-dark-grey">
+                <i class="fab fa-html5 fa-3x"></i>
+                <span>HTML</span>
+            </div>
+            
+            <!-- CSS -->
+            <div class="full-flex flex-col text-dark-grey">
+                <i class="fab fa-css3-alt fa-3x"></i>
+                <span>CSS</span>
+            </div>
+            
+            <!-- Angular -->
+            <div class="full-flex flex-col text-dark-grey">
+                <i class="fab fa-angular fa-3x"></i>
+                <span>Angular</span>
+            </div>
+            
+            <!-- React -->
+            <div class="full-flex flex-col text-dark-grey">
+                <i class="fab fa-react fa-3x"></i>
+                <span>React</span>
+            </div>
+            
+            <!-- Bootstrap -->
+            <div class="full-flex flex-col text-dark-grey">
+                <i class="fab fa-bootstrap fa-3x"></i>
+                <span>Bootstrap</span>
+            </div>
+            
+            <!-- Weixin -->
+            <div class="full-flex flex-col text-dark-grey">
+                <i class="fab fa-weixin fa-3x"></i>
+                <span>Webrtc</span>
+            </div>
+            
+            <!-- Node.js -->
+            <div class="full-flex flex-col text-dark-grey">
+                <i class="fab fa-node-js fa-3x"></i>
+                <span>Node.js</span>
+            </div>
+            
+            <!-- NPM -->
+            <div class="full-flex flex-col text-dark-grey">
+                <i class="fab fa-npm fa-3x"></i>
+                <span>NPM</span>
+            </div>
+            
+            <!-- AWS -->
+            <div class="full-flex flex-col text-dark-grey">
+                <i class="fab fa-aws fa-3x"></i>
+                <span>AWS</span>
+            </div>
+            
+            <!-- Spring Boot -->
+            <div class="full-flex flex-col text-dark-grey">
+                <i class="fab fa-java fa-3x"></i> <!-- Placeholder for SpringBoot -->
+                <span>Spring Boot</span>
+            </div>
+            
+            <!-- Tests -->
+            <div class="full-flex flex-col text-dark-grey">
+                <i class="fas fa-vials fa-3x"></i>
+                <span>Tests</span>
+            </div>
+            
+            <!-- Cron Jobs -->
+            <div class="full-flex flex-col text-dark-grey">
+                <i class="fas fa-clock fa-3x"></i>
+                <span>Cron Jobs</span>
+            </div>
+            
+            <!-- MongoDB -->
+            <div class="full-flex flex-col text-dark-grey">
+                <i class="fas fa-database fa-3x"></i>
+                <span>MongoDB</span>
+            </div>
+            
+            <!-- MySQL -->
+            <div class="full-flex flex-col text-dark-grey">
+                <i class="fas fa-database fa-3x"></i>
+                <span>MySQL</span>
+            </div>
+            
+            <!-- PostgreSQL -->
+            <div class="full-flex flex-col text-dark-grey">
+                <i class="fas fa-database fa-3x"></i>
+                <span>PostgreSQL</span>
+            </div>
+            
+            <!-- Redis -->
+            <div class="full-flex flex-col text-dark-grey">
+                <i class="fas fa-database fa-3x"></i>
+                <span>Redis</span>
+            </div>
+            
+            <!-- Linux -->
+            <div class="full-flex flex-col text-dark-grey">
+                <i class="fab fa-linux fa-3x"></i>
+                <span>Linux</span>
+            </div>
+            
+            <!-- Docker -->
+            <div class="full-flex flex-col text-dark-grey">
+                <i class="fab fa-docker fa-3x"></i>
+                <span>Docker</span>
+            </div>
+            
+            <!-- Git -->
+            <div class="full-flex flex-col text-dark-grey">
+                <i class="fab fa-git fa-3x"></i>
+                <span>Git</span>
+            </div>
+            
+            <!-- Jira -->
+            <div class="full-flex flex-col text-dark-grey">
+                <i class="fas fa-tasks fa-3x"></i>
+                <span>Jira</span>
+            </div>
+            
+            <!-- Documentation -->
+            <div class="full-flex flex-col text-dark-grey">
+                <i class="fas fa-book fa-3x"></i>
+                <span>Documentation</span>
+            </div>
+            
+            <!-- DSA -->
+            <div class="full-flex flex-col text-dark-grey">
+                <i class="fas fa-code fa-3x"></i>
+                <span>DSA</span>
+            </div>
         </div>
+        
     </section>
 
     
