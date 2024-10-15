@@ -255,6 +255,7 @@ body {
 .section {
   width: 100vw;
   height: 100vh;
+  margin-bottom: 80px
 }
 
 .section-two{
@@ -262,7 +263,11 @@ body {
   background-size:cover;
   background-repeat: no-repeat;
 }
-
+.section-four{
+  background-image: url('assets/two.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+}
 .p60{
   padding: 50px;
 }
