@@ -455,11 +455,11 @@ flex-direction: column;
 }
 }
 
-.isdesk{
+/* .isdesk{
   @media(max-width: 480px){
     display:none !important;
     }
-}
+} */
 .container{
   height: 99vh; 
   width: 99vw;  
@@ -533,6 +533,10 @@ margin-right: 10px;
 margin-top: 5px;
 }
 
+.intro{
+  font-size: 40px;
+}
+
 
 @media (max-width: 1200px){
   .section{
@@ -581,5 +585,30 @@ margin-top: 5px;
 
   .section-three{
     height: fit-content;
+  }
+}
+
+@media (max-width: 480px){
+  #profile-sec{
+    height:200px;
+    }
+  .section-one{
+    gap: 30px;
+  }
+  .font140{
+    letter-spacing: 7px;
+    font-size: 6vh;
+  }
+  .icon-group{
+    grid-template-columns: repeat(3, 1fr); 
+  }
+  .section-four{
+    height: 95px;
+  }
+  .p60{
+    padding: 17px;
+  }
+  .intro{
+    font-size: 26px;
   }
 }
