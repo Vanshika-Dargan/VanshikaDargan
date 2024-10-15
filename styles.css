@@ -465,6 +465,7 @@ margin-right: 10px;
 }
 #playground a{
   text-decoration: none;
+  cursor: pointer;
 }
 #playground .hover-link {
   position: relative;
