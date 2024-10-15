@@ -463,7 +463,9 @@ font-weight: 200;
 #playground img{
 margin-right: 10px;
 }
-
+#playground a{
+  text-decoration: none;
+}
 #playground .hover-link {
   position: relative;
   text-decoration: none;
