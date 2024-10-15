@@ -263,11 +263,41 @@ body {
   background-size:cover;
   background-repeat: no-repeat;
 }
+.section-three {
+  display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+gap: 100px;
+margin: auto;
+}
+
+.icon-group {
+display: grid;
+grid-template-columns: repeat(5, 1fr); 
+gap: 20px; 
+justify-items: center; 
+cursor: pointer;
+padding: 20px;
+}
+
+.icon-group i {
+color: #DDDDDD; 
+transition: transform 0.3s; 
+}
+
+.icon-group i:hover {
+transform: scale(1.2);
+}
+
 .section-four{
   background-image: url('assets/two.jpg');
   background-size:cover;
   background-repeat: no-repeat;
+  width: 100%; 
+  height:200px;
 }
+
 .p60{
   padding: 50px;
 }
@@ -285,6 +315,7 @@ body {
 #profile-sec {
   position: relative;
   box-sizing: border-box;
+  height: 100%;
 }
 
 .hover-link {
@@ -414,7 +445,7 @@ display:flex;
 
 .ismob{
   display:none;
-@media(max-width: 1200px){
+@media(max-width: 480px){
 display:flex;
 alexa-align: center;
 justify-content: center;
@@ -425,7 +456,7 @@ flex-direction: column;
 }
 
 .isdesk{
-  @media(max-width: 1200px){
+  @media(max-width: 480px){
     display:none !important;
     }
 }
@@ -504,6 +535,9 @@ margin-top: 5px;
 
 
 @media (max-width: 1200px){
+  .section{
+    height: 100%;
+  }
   .section-one{
     flex-direction: column-reverse;
     gap: 60px;
@@ -523,7 +557,7 @@ margin-top: 5px;
   }
   .section-container{
    width: 100vw;
-   height: 100vh;
+   height: 100%;
   }
   .portfolio-navbar{
     height: fit-content;
@@ -531,6 +565,7 @@ margin-top: 5px;
   }
   .portfolio-text{
     height: fit-content;
+    margin-bottom: 38px;
   }
   .hide-in-mob{
     display:none;
@@ -539,5 +574,12 @@ margin-top: 5px;
     padding: 60px;
     box-sizing: border-box;
     margin: 100px 0;
+  }
+  #profile-sec{
+  height:375px;
+  }
+
+  .section-three{
+    height: fit-content;
   }
 }
