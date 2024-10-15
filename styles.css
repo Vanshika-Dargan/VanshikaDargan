@@ -456,12 +456,38 @@ font-weight: 200;
 }
 
 #playground{
-  gap: 10px;
-  margin-top: 30px;
+  gap: 15px;
+  margin-top: 40px;
 }
 
 #playground img{
 margin-right: 10px;
+}
+
+#playground .hover-link {
+  position: relative;
+  text-decoration: none;
+  color: #61677A; 
+}
+
+#playground .hover-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px; 
+  height: 2px; 
+  background-color: #fff; 
+  transform: scaleX(0); 
+  transition: transform 0.3s ease; 
+}
+
+#playground .hover-link:hover{
+  color: #ffffff;
+}
+
+#playground .hover-link:hover::after {
+  transform: scaleX(1); 
 }
 
 #skills span{

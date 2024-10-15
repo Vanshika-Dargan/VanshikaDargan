@@ -20,18 +20,17 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    width: 80vw;
+    gap: 100px;
     margin: auto;
     }
 
     .icon-group {
     display: grid;
     grid-template-columns: repeat(5, 1fr); 
-    gap: 30px; 
+    gap: 20px; 
     justify-items: center; 
     cursor: pointer;
-    padding: 30px;
+    padding: 20px;
 }
 
 .icon-group i {
@@ -306,8 +305,9 @@
             
             </div>
     </section>
-    <section class="section section-three full-flex isdesk flex-row w-100 h-100" style="gap: 50px;">
-        <div class="w-30">
+    <section class="section full-flex isdesk flex-row">
+        <div class="section-container  full-flex flex-row w-100 h-100 p60 section-three">
+        <div class="">
         <div class="full-flex flex-row w-100 h-15 portfolio-text">
            
             <div class="flex w-100 h-100 flex-col">
@@ -318,11 +318,11 @@
             <div class="outer-square"></div>
           </div>
           </div>
-          <div id="playground" class="font-noto flex flex-col text-dark-grey" style="font-size: 20px;">
-            <div class="flex"><img src="arrow.svg">Learning Cassandra</div>
-            <div class="flex"><img src="arrow.svg">Learning Kafka</div>
-            <div class="flex"><img src="arrow.svg">Learning Typescript</div>
-            <div class="flex"><img src="arrow.svg">Learning Nest</div>
+          <div id="playground" class="font-noto flex flex-col text-dark-grey" style="font-size: 18px;">
+            <div class="flex"><img src="arrow.svg"><span class="hover-link">learning cassandra</span></div>
+            <div class="flex"><img src="arrow.svg"><span class="hover-link">learning typescript</span></div>
+            <div class="flex"><img src="arrow.svg"><span class="hover-link">learning kafka</span></div>
+            <div class="flex"><img src="arrow.svg"><span class="hover-link">learning next</span></div>
           </div>
           
         
@@ -340,152 +340,160 @@
 </div>
     
         <!-- Languages -->
-        <div id="skills" class="icon-group w-60 border-1">
+        <div class="flex flex-col">
+            <div class="w-100 full-flex bg-dark-grey" style="height: 30px">
+                <div style="color: black;
+text-shadow: rgba(255, 255, 255, 0.8) 0px 1px 0px;">
+                    vanshika@skills:/port: 5713/bash
+                </div>
+            </div>
+            <div id="skills" class="icon-group border-1 flex-col">
             <!-- Java -->
             <div class="full-flex flex-col text-dark-grey">
-                <i class="fab fa-java fa-3x"></i>
+                <i class="fab fa-java fa-2x"></i>
                 <span>Java</span>
             </div>
             
             <!-- JavaScript -->
             <div class="full-flex flex-col text-dark-grey">
-                <i class="fab fa-js fa-3x"></i>
+                <i class="fab fa-js fa-2x"></i>
                 <span>JavaScript</span>
             </div>
             
             <!-- HTML -->
             <div class="full-flex flex-col text-dark-grey">
-                <i class="fab fa-html5 fa-3x"></i>
+                <i class="fab fa-html5 fa-2x"></i>
                 <span>HTML</span>
             </div>
             
             <!-- CSS -->
             <div class="full-flex flex-col text-dark-grey">
-                <i class="fab fa-css3-alt fa-3x"></i>
+                <i class="fab fa-css3-alt fa-2x"></i>
                 <span>CSS</span>
             </div>
             
             <!-- Angular -->
             <div class="full-flex flex-col text-dark-grey">
-                <i class="fab fa-angular fa-3x"></i>
+                <i class="fab fa-angular fa-2x"></i>
                 <span>Angular</span>
             </div>
             
             <!-- React -->
             <div class="full-flex flex-col text-dark-grey">
-                <i class="fab fa-react fa-3x"></i>
+                <i class="fab fa-react fa-2x"></i>
                 <span>React</span>
             </div>
             
             <!-- Bootstrap -->
             <div class="full-flex flex-col text-dark-grey">
-                <i class="fab fa-bootstrap fa-3x"></i>
+                <i class="fab fa-bootstrap fa-2x"></i>
                 <span>Bootstrap</span>
             </div>
             
             <!-- Weixin -->
             <div class="full-flex flex-col text-dark-grey">
-                <i class="fab fa-weixin fa-3x"></i>
+                <i class="fab fa-weixin fa-2x"></i>
                 <span>Webrtc</span>
             </div>
             
             <!-- Node.js -->
             <div class="full-flex flex-col text-dark-grey">
-                <i class="fab fa-node-js fa-3x"></i>
+                <i class="fab fa-node-js fa-2x"></i>
                 <span>Node.js</span>
             </div>
             
             <!-- NPM -->
             <div class="full-flex flex-col text-dark-grey">
-                <i class="fab fa-npm fa-3x"></i>
+                <i class="fab fa-npm fa-2x"></i>
                 <span>NPM</span>
             </div>
             
             <!-- AWS -->
             <div class="full-flex flex-col text-dark-grey">
-                <i class="fab fa-aws fa-3x"></i>
+                <i class="fab fa-aws fa-2x"></i>
                 <span>AWS</span>
             </div>
             
             <!-- Spring Boot -->
             <div class="full-flex flex-col text-dark-grey">
-                <i class="fab fa-java fa-3x"></i> <!-- Placeholder for SpringBoot -->
+                <i class="fab fa-java fa-2x"></i> <!-- Placeholder for SpringBoot -->
                 <span>Spring Boot</span>
             </div>
             
             <!-- Tests -->
             <div class="full-flex flex-col text-dark-grey">
-                <i class="fas fa-vials fa-3x"></i>
+                <i class="fas fa-vials fa-2x"></i>
                 <span>Tests</span>
             </div>
             
             <!-- Cron Jobs -->
             <div class="full-flex flex-col text-dark-grey">
-                <i class="fas fa-clock fa-3x"></i>
+                <i class="fas fa-clock fa-2x"></i>
                 <span>Cron Jobs</span>
             </div>
             
             <!-- MongoDB -->
             <div class="full-flex flex-col text-dark-grey">
-                <i class="fas fa-database fa-3x"></i>
+                <i class="fas fa-database fa-2x"></i>
                 <span>MongoDB</span>
             </div>
             
             <!-- MySQL -->
             <div class="full-flex flex-col text-dark-grey">
-                <i class="fas fa-database fa-3x"></i>
+                <i class="fas fa-database fa-2x"></i>
                 <span>MySQL</span>
             </div>
             
             <!-- PostgreSQL -->
             <div class="full-flex flex-col text-dark-grey">
-                <i class="fas fa-database fa-3x"></i>
+                <i class="fas fa-database fa-2x"></i>
                 <span>PostgreSQL</span>
             </div>
             
             <!-- Redis -->
             <div class="full-flex flex-col text-dark-grey">
-                <i class="fas fa-database fa-3x"></i>
+                <i class="fas fa-database fa-2x"></i>
                 <span>Redis</span>
             </div>
             
             <!-- Linux -->
             <div class="full-flex flex-col text-dark-grey">
-                <i class="fab fa-linux fa-3x"></i>
+                <i class="fab fa-linux fa-2x"></i>
                 <span>Linux</span>
             </div>
             
             <!-- Docker -->
             <div class="full-flex flex-col text-dark-grey">
-                <i class="fab fa-docker fa-3x"></i>
+                <i class="fab fa-docker fa-2x"></i>
                 <span>Docker</span>
             </div>
             
             <!-- Git -->
             <div class="full-flex flex-col text-dark-grey">
-                <i class="fab fa-git fa-3x"></i>
+                <i class="fab fa-git fa-2x"></i>
                 <span>Git</span>
             </div>
             
             <!-- Jira -->
             <div class="full-flex flex-col text-dark-grey">
-                <i class="fas fa-tasks fa-3x"></i>
+                <i class="fas fa-tasks fa-2x"></i>
                 <span>Jira</span>
             </div>
             
             <!-- Documentation -->
             <div class="full-flex flex-col text-dark-grey">
-                <i class="fas fa-book fa-3x"></i>
+                <i class="fas fa-book fa-2x"></i>
                 <span>Documentation</span>
             </div>
             
             <!-- DSA -->
             <div class="full-flex flex-col text-dark-grey">
-                <i class="fas fa-code fa-3x"></i>
+                <i class="fas fa-code fa-2x"></i>
                 <span>DSA</span>
             </div>
         </div>
-        
+        </div>
+        </div>
     </section>
 
     
